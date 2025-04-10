@@ -1,17 +1,20 @@
-import { Inter } from "next/font/google";
-import './globals.css'
+import Navbar from "../ui/dashboard/navbar/navbar"
+import Sidebar from "../ui/dashboard/sidebar/sidebar"
 
-const inter = Inter({ subsets: ['latin']})
-
-export const metadata = {
-    title: 'Mapazzz Admin Dashboard',
-    description: 'Next.js'
-}
-
-export default function RootLayaut({ children }) {
+const Layout = ({Children}) => {
     return (
-        <html lang="en">
-            <body className={inter.className}>{children}</body>
-        </html>
+        <div>
+            <div>
+                <Sidebar/>
+            </div>
+
+            <div>
+                <Navbar/>
+                {Children}
+            </div>
+
+        </div>
     )
 }
+
+export default Layout
