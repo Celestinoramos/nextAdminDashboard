@@ -1,10 +1,10 @@
+import { LuUsers } from "react-icons/lu";
 import MenuLink from "./menuLink/menuLinks";
 import styles from "./sidebar.module.css" ;
 import Image from "next/image"; 
+import { TbMap2 } from "react-icons/tb";
 import {
     MdDashboard,
-    MdSupervisedUserCircle,
-    MdAnalytics,
     MdPeople,
     MdOutlineSettings,
     MdHelpCenter,
@@ -23,7 +23,7 @@ import {
             {
                 title:"Usuarios",
                 path: "/dashboard/users",
-                icon: <MdSupervisedUserCircle />
+                icon: <LuUsers />
             },
         ],
     },
@@ -33,12 +33,12 @@ import {
             {
                 title: "Zonas Reportadas",
                 path: "/dasboard/reports",
-                icon: <MdAnalytics />,
+                icon: <TbMap2 />,
             },
             {
                 title: "Colaboradores",
                 path: "/dashboard/colabs",
-                icon: <MdPeople />,
+                icon: <LuUsers />,
             },
         ],
     },
@@ -79,6 +79,10 @@ const Sidebar = async () => {
                 </li>
                ))}
             </ul>
+            <button className={styles.logout}>
+               <MdLogout />
+            Logout
+            </button>
             </div>
     );
 }
