@@ -22,7 +22,7 @@ const RegisterPage = () => {
     <div className={styles.container}>
       <div className={styles.formContainer}>
         <div className={styles.logoContainer}>
-          <Image src="/logoTrans.png" alt="Logo" width={100} height={100} />
+          <Image src="/logoTrans.png" alt="Logo" width={100} height={120} />
         </div>
         <h1 className={styles.title}>Cadastro</h1>
         <form onSubmit={handleSubmit} className={styles.form}>
