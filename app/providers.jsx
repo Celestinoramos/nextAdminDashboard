@@ -3,7 +3,7 @@
 
 import { NextUIProvider } from "@nextui-org/react"
 
-export function Providers({ children }) {
+export function Providers({ children, themeProps }) {
   return (
     <NextUIProvider>
       {children}

@@ -7,8 +7,11 @@ import clsx from 'clsx'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata = {
-  title: 'MapaZZZ Next.js Admin Dashboard',
-  description: 'Next.js Application',
+  title: 'MapaZZZ - Sistema de Gestão de Zonas de Risco',
+  description: 'Sistema de Gestão de Zonas de Risco',
+  icons: {
+    icon: '/logoTrans.png',
+  },
 }
 
 export const viewport = {
@@ -26,7 +29,7 @@ export default function RootLayout({ children }) {
         "min-h-screen bg-background font-sans antialiased",
         inter.className
       )}>
-        <Providers>
+        <Providers themeProps={{ attribute: "class", defaultTheme: "dark" }}>
           {children}
         </Providers>
       </body>
