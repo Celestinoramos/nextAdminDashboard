@@ -1,7 +1,6 @@
-
 .container {
   min-height: 100vh;
-  background-color: #000;
+  background-image: linear-gradient(to bottom, #222, #333, #222); /* Monochromatic gradient */
   color: white;
 }
 
@@ -177,4 +176,12 @@
   .steps, .features {
     grid-template-columns: 1fr;
   }
+}
+
+.featuresSection {
+  padding: 4rem 2rem;
+  text-align: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: #1a1a1a;
 }
