@@ -2,9 +2,9 @@
 import Link from 'next/link'
 import Image from 'next/image'
 import styles from './ui/homepage.module.css'
-import { LuUsers } from 'react-icons/lu'
-import { TbMap2 } from 'react-icons/tb'
-import { MdDashboard } from 'react-icons/md'
+import { LuUsers } from "react-icons/lu"
+import { TbMap2 } from "react-icons/tb"
+import { MdDashboard } from "react-icons/md"
 
 const Homepage = () => {
   return (
