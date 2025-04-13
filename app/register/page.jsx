@@ -7,18 +7,15 @@ import { useRouter } from 'next/navigation';
 import Link from 'next/link';
 import Image from 'next/image';
 
-const LoginPage = () => {
+const RegisterPage = () => {
+  const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const router = useRouter();
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    // TODO: Implement email/password login
-  };
-
-  const handleGoogleLogin = async () => {
-    // TODO: Implement Google login
+    // TODO: Implement registration
   };
 
   return (
@@ -27,8 +24,15 @@ const LoginPage = () => {
         <div className={styles.logoContainer}>
           <Image src="/logoTrans.png" alt="Logo" width={100} height={100} />
         </div>
-        <h1 className={styles.title}>Login</h1>
+        <h1 className={styles.title}>Cadastro</h1>
         <form onSubmit={handleSubmit} className={styles.form}>
+          <input
+            type="text"
+            placeholder="Nome"
+            value={name}
+            onChange={(e) => setName(e.target.value)}
+            className={styles.input}
+          />
           <input
             type="email"
             placeholder="Email"
@@ -44,19 +48,15 @@ const LoginPage = () => {
             className={styles.input}
           />
           <button type="submit" className={styles.button}>
-            Entrar
+            Cadastrar
           </button>
         </form>
-        <button onClick={handleGoogleLogin} className={styles.googleButton}>
-          <Image src="https://authjs.dev/img/providers/google.svg" alt="Google" width={20} height={20} />
-          Entrar com Google
-        </button>
-        <Link href="/register" className={styles.registerLink}>
-          Não tem uma conta? Cadastre-se
+        <Link href="/login" className={styles.registerLink}>
+          Já tem uma conta? Faça login
         </Link>
       </div>
     </div>
   );
 };
 
-export default LoginPage;
+export default RegisterPage;
