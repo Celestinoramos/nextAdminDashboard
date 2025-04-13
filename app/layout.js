@@ -1,5 +1,6 @@
 
 import { Inter } from 'next/font/google'
+import { Providers } from "./providers";
 import './ui/globals.css'
 import clsx from 'clsx'
 
@@ -25,7 +26,9 @@ export default function RootLayout({ children }) {
         "min-h-screen bg-background font-sans antialiased",
         inter.className
       )}>
-        {children}
+        <Providers>
+          {children}
+        </Providers>
       </body>
     </html>
   )
