@@ -25,7 +25,7 @@ const LoginPage = () => {
     <div className={styles.container}>
       <div className={styles.formContainer}>
         <div className={styles.logoContainer}>
-          <Image src="/logoTrans.png" alt="Logo" width={100} height={100} />
+          <Image src="/logoTrans.png" alt="Logo" width={100} height={125} />
         </div>
         <h1 className={styles.title}>Login</h1>
         <form onSubmit={handleSubmit} className={styles.form}>
