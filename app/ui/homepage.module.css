@@ -1,7 +1,7 @@
 .container {
   min-height: 100vh;
-  background-image: linear-gradient(to bottom, #222, #333, #222); /* Monochromatic gradient */
-  color: white;
+  background-color: var(--bg);
+  color: var(--text);
 }
 
 .navbar {
@@ -76,13 +76,13 @@
 
 .primaryButton {
   background-color: #dc2626;
-  color: white;
+  color: var(--text);
 }
 
 .secondaryButton {
   background-color: transparent;
-  border: 1px solid #dc2626;
-  color: #dc2626;
+  border: 2px solid #2e374a;
+  color: var(--text);
 }
 
 .imageContainer {
@@ -183,5 +183,5 @@
   text-align: center;
   max-width: 1200px;
   margin: 0 auto;
-  background-color: #1a1a1a;
+  background-color: var(--bgSoft);
 }
