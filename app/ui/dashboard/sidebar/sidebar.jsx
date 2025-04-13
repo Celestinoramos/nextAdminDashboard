@@ -32,7 +32,7 @@ import {
         list: [
             {
                 title: "Zonas Reportadas",
-                path: "/dasboard/reports",
+                path: "/dashboard/reports",
                 icon: <TbMap2 />,
             },
             {
