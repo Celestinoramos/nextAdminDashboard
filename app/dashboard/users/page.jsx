@@ -1,7 +1,6 @@
+"use client";
 
-'use client'
-
-import { useState, useEffect } from 'react';
+import { useState, useEffect } from "react";
 import styles from "../../ui/dashboard/users/users.module.css";
 import Image from "next/image";
 import { Spinner } from "@nextui-org/react";
@@ -13,12 +12,14 @@ const UsersPage = () => {
   useEffect(() => {
     const fetchUsers = async () => {
       try {
-        const response = await fetch('https://mapazzz.vercel.app/profiles');
+        const response = await fetch(
+          "https://api-mapp-zzz.vercel.app/profiles",
+        );
         const data = await response.json();
         setUsers(data);
         setLoading(false);
       } catch (error) {
-        console.error('Erro ao buscar usuários:', error);
+        console.error("Erro ao buscar usuários:", error);
         setLoading(false);
       }
     };
@@ -43,10 +44,10 @@ const UsersPage = () => {
         {users.map((user) => (
           <div key={user.id} className={styles.card}>
             <div className={styles.userImageContainer}>
-              <Image 
-                src={user.avatar || "/noavatar.png"} 
-                alt="" 
-                fill 
+              <Image
+                src={user.avatar || "/noavatar.png"}
+                alt=""
+                fill
                 className={styles.userImage}
                 sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
               />
