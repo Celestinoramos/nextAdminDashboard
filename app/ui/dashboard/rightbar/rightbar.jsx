@@ -8,7 +8,7 @@ const Rightbar = () => {
     <div className={styles.container}>
       <div className={styles.item}>
         <div className={styles.bgContainer}>
-          <Image className={styles.bg} src="/astronaut.png" alt="" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" />
+          <Image className={styles.bg} src="/logoTrans.png" alt="" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" />
         </div>
         <div className={styles.text}>
           <span className={styles.notification}>Prevenção Contra Malária</span>
