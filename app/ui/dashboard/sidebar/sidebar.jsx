@@ -6,7 +6,6 @@ import { TbMap2 } from "react-icons/tb";
 import { GoHome } from "react-icons/go";
 import {
     MdDashboard,
-    MdPeople,
     MdOutlineSettings,
     MdHelpCenter,
     MdLogout,
@@ -27,14 +26,14 @@ import {
             icon: <MdDashboard />
             },
             {
-                title:"Usuarios",
+                title:"Usuários",
                 path: "/dashboard/users",
                 icon: <LuUsers />
             },
         ],
     },
     {
-        title: "Analises",
+        title: "Análises",
         list: [
             {
                 title: "Zonas Reportadas",
@@ -49,10 +48,10 @@ import {
         ],
     },
     {
-        title: "User",
+        title: "Usuários",
         list: [
             {
-                title: "Definicoes",
+                title: "Definições",
                 path: "/dashboard/settings",
                 icon: <MdOutlineSettings />
             },

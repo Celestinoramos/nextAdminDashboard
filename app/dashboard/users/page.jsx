@@ -12,9 +12,7 @@ const UsersPage = () => {
   useEffect(() => {
     const fetchUsers = async () => {
       try {
-        const response = await fetch(
-          "https://api-mapp-zzz.vercel.app/profiles",
-        );
+        const response = await fetch("https://api-mapp-zzz.vercel.app/profiles");
         const data = await response.json();
         setUsers(data);
         setLoading(false);
