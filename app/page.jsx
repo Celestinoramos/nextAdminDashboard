@@ -52,10 +52,10 @@ const Homepage = () => {
           <h2>Baixe Nosso Aplicativo</h2>
           <p>Disponível para iOS e Android</p>
           <div className={styles.downloadButtons}>
-            <a href="#" className={styles.downloadButton}>
+            <a href="https://apps.apple.com/app/mapazzz" target="_blank" rel="noopener noreferrer" className={styles.downloadButton}>
               <Image src="/app-store.png" alt="App Store" width={160} height={48} />
             </a>
-            <a href="#" className={styles.downloadButton}>
+            <a href="https://play.google.com/store/apps/details?id=com.mapazzz" target="_blank" rel="noopener noreferrer" className={styles.downloadButton}>
               <Image src="/play-store.png" alt="Play Store" width={160} height={48} />
             </a>
           </div>
