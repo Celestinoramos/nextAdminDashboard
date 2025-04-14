@@ -31,7 +31,7 @@ const Homepage = () => {
             <Link href="/dashboard" className={styles.primaryButton}>
               Começar Agora
             </Link>
-            <button className={styles.secondaryButton}>Saiba Mais</button>
+            <Link href="/saiba-mais" className={styles.secondaryButton}>Saiba Mais</Link>
           </div>
         </div>
         <div className={styles.imageContainer}>
