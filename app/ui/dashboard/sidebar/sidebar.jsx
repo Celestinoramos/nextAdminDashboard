@@ -3,6 +3,7 @@ import MenuLink from "./menuLink/menuLinks";
 import styles from "./sidebar.module.css" ;
 import Image from "next/image"; 
 import { TbMap2 } from "react-icons/tb";
+import { GoHome } from "react-icons/go";
 import {
     MdDashboard,
     MdPeople,
@@ -15,6 +16,11 @@ import {
     {
         title: "Pages",
         list: [
+            {
+                title: "Home",
+                path: "/",
+                icon: <GoHome />
+            },
             {
             title: "Dashboard",
             path: "/dashboard",
@@ -55,6 +61,11 @@ import {
                 path: "/dashboard/help",
                 icon: <MdHelpCenter />
             },
+            {
+                title: "Sair",
+                path: "/login",
+                icon: <MdLogout />
+            },
         ],
     },
  ];
@@ -79,10 +90,6 @@ const Sidebar = async () => {
                 </li>
                ))}
             </ul>
-            <button className={styles.logout}>
-               <MdLogout />
-            Logout
-            </button>
             </div>
     );
 }
