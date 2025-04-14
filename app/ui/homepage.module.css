@@ -178,6 +178,72 @@
   }
 }
 
+.downloadSection {
+  padding: 4rem 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  background-color: var(--bgSoft);
+  border-radius: 10px;
+  margin-bottom: 2rem;
+}
+
+.downloadContent {
+  flex: 1;
+  text-align: left;
+}
+
+.downloadContent h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: #dc2626;
+}
+
+.downloadContent p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  color: var(--text);
+}
+
+.downloadButtons {
+  display: flex;
+  gap: 1rem;
+}
+
+.downloadButton {
+  transition: transform 0.2s;
+}
+
+.downloadButton:hover {
+  transform: translateY(-5px);
+}
+
+.phoneContainer {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.phoneImage {
+  object-fit: contain;
+  animation: float 3s ease-in-out infinite;
+}
+
+@media (max-width: 768px) {
+  .downloadSection {
+    flex-direction: column;
+    text-align: center;
+    padding: 2rem 1rem;
+  }
+  
+  .downloadButtons {
+    justify-content: center;
+  }
+}
+
 .featuresSection {
   padding: 4rem 2rem;
   text-align: center;
