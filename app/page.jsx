@@ -47,78 +47,7 @@ const Homepage = () => {
         </div>
       </main>
 
-      <section className={styles.stepsSection}>
-        <h2>Passo a Passo</h2>
-        <p>Passo a Passo</p>
-        <div className={styles.steps}>
-          <div className={styles.step}>
-            <span className={styles.stepNumber}>1</span>
-            <h3>Cadastro de Usuários</h3>
-            <p>Cadastro de Usuários</p>
-          </div>
-          <div className={styles.step}>
-            <span className={styles.stepNumber}>2</span>
-            <h3>Gestão de Relatos</h3>
-            <p>
-              Adicione, edite ou remova relatos de zonas de risco com detalhes
-              como nível de criticidade, localização e imagens, tudo de forma
-              rápida e segura.
-            </p>
-          </div>
-          <div className={styles.step}>
-            <span className={styles.stepNumber}>3</span>
-            <h3>Geração de Relatórios</h3>
-            <p>
-              Visualize e exporte relatórios detalhados sobre usuários, relatos
-              e zonas de risco para análise e prestação de contas.
-            </p>
-          </div>
-        </div>
-      </section>
-
-      <section className={styles.featuresSection}>
-        <h2>Como Funciona o Sistema</h2>
-        <p>
-          Nossa plataforma oferece ferramentas completas para administrar todos
-          os aspectos relacionados a zonas de risco, usuários e alertas em sua
-          comunidade ou organização.
-        </p>
-
-        <div className={styles.features}>
-          <div className={styles.feature}>
-            <div className={styles.featureIcon}>
-              <LuUsers />
-            </div>
-            <h3>Gestão de Usuários</h3>
-            <p>
-              Cadastre e gerencie colaboradores e administradores com
-              informações detalhadas, como nome, permissões, status da conta e
-              localização residencial.
-            </p>
-          </div>
-          <div className={styles.feature}>
-            <div className={styles.featureIcon}>
-              <TbMap2 />
-            </div>
-            <h3>Registro de Relatos</h3>
-            <p>
-              Registre facilmente relatos de zonas de risco, incluindo nível de
-              criticidade, localização geográfica e imagens, com histórico
-              completo de alterações.
-            </p>
-          </div>
-          <div className={styles.feature}>
-            <div className={styles.featureIcon}>
-              <MdDashboard />
-            </div>
-            <h3>Relatórios Detalhados</h3>
-            <p>
-              Gere relatórios completos sobre relatos, usuários e zonas de risco
-              para acompanhar tendências e facilitar a tomada de decisão.
-            </p>
-          </div>
-        </div>
-      </section>
+      
 
       <section className={styles.ctaSection}>
         <h2>Pronto para começar?</h2>

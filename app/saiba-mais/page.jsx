@@ -15,6 +15,31 @@ const SaibaMaisPage = () => {
           comunidade ou organização.
         </p>
 
+        <div className={styles.steps}>
+          <div className={styles.step}>
+            <span className={styles.stepNumber}>1</span>
+            <h3>Cadastro de Usuários</h3>
+            <p>Cadastro de Usuários</p>
+          </div>
+          <div className={styles.step}>
+            <span className={styles.stepNumber}>2</span>
+            <h3>Gestão de Relatos</h3>
+            <p>
+              Adicione, edite ou remova relatos de zonas de risco com detalhes
+              como nível de criticidade, localização e imagens, tudo de forma
+              rápida e segura.
+            </p>
+          </div>
+          <div className={styles.step}>
+            <span className={styles.stepNumber}>3</span>
+            <h3>Geração de Relatórios</h3>
+            <p>
+              Visualize e exporte relatórios detalhados sobre usuários, relatos
+              e zonas de risco para análise e prestação de contas.
+            </p>
+          </div>
+        </div>
+
         <div className={styles.features}>
           <div className={styles.feature}>
             <h3>Gestão de Usuários</h3>

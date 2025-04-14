@@ -24,11 +24,41 @@
   line-height: 1.6;
 }
 
+.steps {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  margin: 3rem 0;
+}
+
+.step {
+  background: var(--bgSoft);
+  padding: 2rem;
+  border-radius: 10px;
+  transition: transform 0.2s;
+}
+
+.step:hover {
+  transform: translateY(-5px);
+}
+
+.stepNumber {
+  background: #dc2626;
+  color: white;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  margin: 0 auto 1rem;
+}
+
 .features {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 2rem;
-  margin-bottom: 3rem;
+  margin: 3rem 0;
 }
 
 .feature {
@@ -67,7 +97,7 @@
 }
 
 @media (max-width: 768px) {
-  .features {
+  .steps, .features {
     grid-template-columns: 1fr;
   }
 }
