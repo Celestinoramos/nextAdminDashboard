@@ -67,6 +67,9 @@ const ReportsPage = () => {
                     width={300}
                     height={200}
                     className={styles.image}
+                    onError={(e) => {
+                      e.target.src = '/noproduct.jpg';
+                    }}
                   />
                 </div>
               </CardHeader>
