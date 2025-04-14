@@ -75,7 +75,7 @@ const ReportsPage = () => {
                 <p className={styles.description}>{report.description}</p>
                 <p className={styles.location}>{report.locationName || report.location}</p>
                 <div className={styles.reportMeta}>
-                  <span className={`${styles.severity} ${styles[report.severity.toLowerCase() || 'medio']}`}>
+                  <span className={`${styles.severity} ${styles[(report.severity || 'medio').toLowerCase()]}`}>
                     {report.severity || 'Médio'}
                   </span>
                   <span className={styles.date}>{report.date}</span>
