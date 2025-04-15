@@ -60,7 +60,7 @@ const Homepage = () => {
               rel="noopener noreferrer"
               className={styles.downloadButton}
             >
-              <Image src="/app-store.png" alt="App Store" width={160} height={48} />
+              <Image src="/app-store.png" alt="App Store" width={160} height={50} />
             </a>
             <a
               href="https://play.google.com/store/apps/details?id=com.mapazzz"
@@ -68,7 +68,7 @@ const Homepage = () => {
               rel="noopener noreferrer"
               className={styles.downloadButton}
             >
-              <Image src="/play-store-logo.png" alt="Play Store" width={160} height={60} />
+              <Image src="/play-store-logo.png" alt="Play Store" width={160} height={50} />
             </a>
           </div>
         </div>
