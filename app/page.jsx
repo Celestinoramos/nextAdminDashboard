@@ -31,7 +31,9 @@ const Homepage = () => {
             <Link href="/dashboard" className={styles.primaryButton}>
               Começar Agora
             </Link>
-            <Link href="/saiba-mais" className={styles.secondaryButton}>Saiba Mais</Link>
+            <Link href="/saiba-mais" className={styles.secondaryButton}>
+              Saiba Mais
+            </Link>
           </div>
         </div>
         <div className={styles.imageContainer}>
@@ -52,19 +54,29 @@ const Homepage = () => {
           <h2>Baixe Nosso Aplicativo</h2>
           <p>Disponível para iOS e Android</p>
           <div className={styles.downloadButtons}>
-            <a href="https://apps.apple.com/app/mapazzz" target="_blank" rel="noopener noreferrer" className={styles.downloadButton}>
+            <a
+              href="https://apps.apple.com/app/mapazzz"
+              target="_blank"
+              rel="noopener noreferrer"
+              className={styles.downloadButton}
+            >
               <Image src="/app-store.png" alt="App Store" width={160} height={48} />
             </a>
-            <a href="https://play.google.com/store/apps/details?id=com.mapazzz" target="_blank" rel="noopener noreferrer" className={styles.downloadButton}>
-              <Image src="/play-store.png" alt="Play Store" width={160} height={48} />
+            <a
+              href="https://play.google.com/store/apps/details?id=com.mapazzz"
+              target="_blank"
+              rel="noopener noreferrer"
+              className={styles.downloadButton}
+            >
+              <Image src="/play-store-logo.png" alt="Play Store" width={160} height={60} />
             </a>
           </div>
         </div>
         <div className={styles.phoneContainer}>
-          <Image 
-            src="/phone-mockup.png" 
-            alt="App Preview" 
-            width={300} 
+          <Image
+            src="/phone-mockup.png"
+            alt="App Preview"
+            width={300}
             height={600}
             className={styles.phoneImage}
           />
