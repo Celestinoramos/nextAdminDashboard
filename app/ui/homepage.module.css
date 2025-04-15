@@ -210,7 +210,14 @@
 
 .downloadButtons {
   display: flex;
-  gap: 1rm;
+  gap: 20px;
+  justify-content: center;
+}
+
+.downloadButton img {
+  width: 160px !important;
+  height: 48px !important;
+  object-fit: contain;
 }
 
 .downloadButton {
