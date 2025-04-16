@@ -209,15 +209,8 @@
 }
 
 .downloadButtons {
-  display: flex;
-  gap: 20px;
-  justify-content: center;
-}
-
-.downloadButton img {
-  width: 160px !important;
-  height: 48px !important;
-  object-fit: contain;
+  display: inline-flex;
+  gap: 1rm;
 }
 
 .downloadButton {
