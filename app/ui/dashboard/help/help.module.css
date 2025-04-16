@@ -1,0 +1,70 @@
+
+.container {
+  background-color: var(--bgSoft);
+  padding: 20px;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+
+.top {
+  margin-bottom: 20px;
+}
+
+.title {
+  color: var(--textSoft);
+  margin-bottom: 20px;
+  font-weight: 200;
+}
+
+.content {
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+}
+
+.card {
+  background-color: var(--bg);
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.card h3 {
+  margin-bottom: 20px;
+  color: var(--textSoft);
+}
+
+.faqItem {
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid var(--bgSoft);
+}
+
+.faqItem:last-child {
+  border-bottom: none;
+}
+
+.faqItem h4 {
+  color: var(--text);
+  margin-bottom: 10px;
+}
+
+.faqItem p {
+  color: var(--textSoft);
+  line-height: 1.5;
+}
+
+.button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #dc2626;
+  color: var(--text);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+  margin-top: 10px;
+}
+
+.button:hover {
+  background-color: #ef4444;
+}
