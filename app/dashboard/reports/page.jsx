@@ -1,12 +1,11 @@
-'use client'
+"use client";
 
-import { useState, useEffect } from 'react';
+import { useState, useEffect } from "react";
 import { Card, CardHeader, CardBody } from "@nextui-org/react";
-import Image from 'next/image';
-import styles from '../../ui/dashboard/reports/reports.module.css';
+import Image from "next/image";
+import styles from "../../ui/dashboard/reports/reports.module.css";
 import { Spinner } from "@nextui-org/react";
 import { motion } from "framer-motion";
-
 
 const ReportsPage = () => {
   const [reports, setReports] = useState([]);
@@ -15,7 +14,7 @@ const ReportsPage = () => {
   useEffect(() => {
     const fetchReports = async () => {
       try {
-        const res = await fetch('https://api-mapp-zzz.vercel.app/reports');
+        const res = await fetch("https://api-mapp-zzz.vercel.app/reports");
         const data = await res.json();
         setReports(data);
         setLoading(false);
@@ -62,13 +61,13 @@ const ReportsPage = () => {
               <CardHeader className={styles.cardHeader}>
                 <div className={styles.imageContainer}>
                   <Image
-                    src={report.image || '/noproduct.jpg'}
+                    src={report.image || "/noproduct.jpg"}
                     alt={report.title}
                     width={300}
                     height={200}
                     className={styles.image}
                     onError={(e) => {
-                      e.target.src = '/noproduct.jpg';
+                      e.target.src = "/noproduct.jpg";
                     }}
                   />
                 </div>
@@ -76,10 +75,14 @@ const ReportsPage = () => {
               <CardBody className={styles.cardBody}>
                 <h3 className={styles.reportTitle}>{report.title}</h3>
                 <p className={styles.description}>{report.description}</p>
-                <p className={styles.location}>{report.locationName || report.location}</p>
+                <p className={styles.location}>
+                  {report.locationName || report.location}
+                </p>
                 <div className={styles.reportMeta}>
-                  <span className={`${styles.severity} ${styles[(report.severity || 'medio').toLowerCase()]}`}>
-                    {report.severity || 'Médio'}
+                  <span
+                    className={`${styles.severity} ${styles[(report.severity || "medio").toLowerCase()]}`}
+                  >
+                    {report.severity || "Médio"}
                   </span>
                   <span className={styles.date}>{report.date}</span>
                 </div>
