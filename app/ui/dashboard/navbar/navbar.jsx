@@ -6,9 +6,21 @@ import { MdSearch } from "react-icons/md";
 const Navbar = () => {
   const pathname = usePathname();
 
+  const getTitleInPortuguese = (path) => {
+    const titles = {
+      'dashboard': 'Painel',
+      'users': 'Usuários',
+      'reports': 'Relatórios',
+      'settings': 'Configurações',
+      'help': 'Ajuda'
+    };
+    const pathSegment = path.split("/").pop();
+    return titles[pathSegment] || pathSegment;
+  };
+
   return (
     <div className={styles.container}>
-      <div className={styles.title}>{pathname.split("/").pop()}</div>
+      <div className={styles.title}>{getTitleInPortuguese(pathname)}</div>
       <div className={styles.menu}>
         <div className={styles.search}>
           <MdSearch />
